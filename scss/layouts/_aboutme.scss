@@ -35,7 +35,7 @@
   height: 90vh;
   width: 100%;
   background-color: $color-gris-oscuro;
-  background-image: url(/assets/images/mind-and-earth.jpg);
+  background-image: url(/assets/images/bg-mind-and-earth.jpg);
   @include background-image (fixed, cover, center); 
   overflow: hidden;
 }

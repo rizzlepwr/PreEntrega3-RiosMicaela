@@ -301,7 +301,7 @@ div#video-4 {
   align-items: center;
   text-align: center;
   /* background-parallax-home */
-  background-image: url(/assets/images/background-hero.jpg);
+  background-image: url(/assets/images/bg-hero.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -442,7 +442,7 @@ article#calidad {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(/assets/images/background-hero.jpg);
+  background-image: url(/assets/images/bg-hero.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -978,7 +978,7 @@ label {
   height: 90vh;
   width: 100%;
   background-color: #333646;
-  background-image: url(/assets/images/mind-and-earth.jpg);
+  background-image: url(/assets/images/bg-mind-and-earth.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
