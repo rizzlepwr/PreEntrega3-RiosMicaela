@@ -45,9 +45,9 @@ section#card-6 {
   position: relative;
   width: 100%;
   height: 900px;
-  @include flex-center;
+  @include flex (column, center, center, center);
   /* background-parallax-home */
-  @include background-image-2; 
+  @include background-image (url(../../assets/images/background-hero.jpg), fixed, cover, center); 
   overflow: hidden;
   border: $color-border 1px solid;
 }
@@ -55,7 +55,7 @@ section#card-6 {
 .logo-hero {
   width: 100%;
   height: 300px;
-  @include flex-center;
+  @include flex (column, center, center, center);
   position: absolute;
   object-fit: contain;
   padding: 30px;
@@ -79,16 +79,18 @@ section#card-6 {
 
 
 /* ABOUT */
+
 div.habilidades-flex {
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  padding: 50px 20px;
+  gap: 20px;
 }
 
 .habilidades-flex {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Ajusta aquí el número de columnas */ /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta automáticamente el número de columnas */
+  grid-template-areas: "detalle creatividad calidad";
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
@@ -96,16 +98,29 @@ div.habilidades-flex {
   gap: 20px;
 }
 
+article#detalle {
+  grid-area: detalle;
+}
+
+article#creatividad {
+  grid-area: creatividad;
+}
+
+article#calidad {
+  grid-area: calidad;
+}
+
+
 .detalle-content {
   display: inline-block;
+  justify-content: center;
+  align-items: center;
   padding: 50px 20px;
   text-align: center;
-  width: 400px;
+  width: 100%;
 }
 
 .detalle-content img {
-  width: auto;
-  height: auto;
   background-color: $color-gris-oscuro-opacity;
   padding: 16px;
   border-radius: 30px;
@@ -114,15 +129,14 @@ div.habilidades-flex {
 
 .creatividad-content {
   display: inline-block;
-  padding: 50px 20px;
   justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
   text-align: center;
-  width: 400px;
+  width: 100%;
 }
 
 .creatividad-content img {
-  width: auto;
-  height: auto;
   background-color: $color-gris-oscuro-opacity;
   padding: 16px;
   border-radius: 30px;
@@ -131,14 +145,14 @@ div.habilidades-flex {
 
 .calidad-content {
   display: inline-block;
+  justify-content: center;
+  align-items: center;
   padding: 50px 20px;
   text-align: center;
-  width: 400px;
+  width: 100%;
 }
 
 .calidad-content img {
-  width: auto;
-  height: auto;
   background-color: $color-gris-oscuro-opacity;
   padding: 16px;
   border-radius: 30px;
@@ -153,6 +167,7 @@ div.habilidades-flex {
 .profile-flex {
   display: grid;
   grid-template-columns: 1fr; /* Dos columnas para la imagen y el contenido del perfil */
+  grid-template-areas: profile-flex;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -164,8 +179,8 @@ div.habilidades-flex {
 /* background-parallax-home */
 .background-parallax {
   width: 100%;
-  @include flex-center;
-  @include background-image-2; 
+  @include flex (column, center, center, center);
+  @include background-image (url(../../assets/images/background-hero.jpg), fixed, cover, center); 
   overflow: hidden;
   gap: 0 100px;
   flex-flow: row wrap;
@@ -173,8 +188,7 @@ div.habilidades-flex {
 }
 
 .profile-content {
-  @include flex-center;
-  flex-direction: column;
+  @include flex (column, center, center, center);
   width: 600px;
   padding: 0 20px 30px 20px;
 }
@@ -189,7 +203,7 @@ div.habilidades-flex {
 }
 
 .photographer {
-  @include flex-center;
+  @include flex (column, center, center, center);
   object-fit: cover;
   width: 400px;
   height: 400px;

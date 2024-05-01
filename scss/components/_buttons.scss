@@ -1,7 +1,7 @@
 /* BOTONES */
 
 .button {
-    @include flex-center;
+    @include flex(row, center, center, center);
     position: absolute;
     bottom: 10px;
     width: 100%;

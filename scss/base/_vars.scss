@@ -4,24 +4,19 @@ $color-gris-claro: #575966;
 $color-white: white;
 $color-border: #92939c;
 
-@mixin flex-center {
+// mixins con parametros
+@mixin flex($direction, $justify, $align, $text) {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $text;
 }
 
-@mixin background-image {
-    background-image: url(../../assets/images/mind-and-earth.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+@mixin background-image($bg-image, $bg-attachment, $bg-size, $bg-position) {
+    background-image: $bg-image;
+    background-attachment: $bg-attachment;
+    background-size: $bg-size;
+    background-position: $bg-position;
 }
 
-@mixin background-image-2 {
-    background-image: url(../../assets/images/background-hero.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    object-fit: contain;
-}

@@ -10,21 +10,18 @@
 
 
 .about-me-content {
-  display: flex;
-  flex-direction: column;
+  @include flex (column, center, center, center);
   width: 100%;
   height: auto;
   padding: 0 60px 30px 60px;
-  text-align: center;
-  justify-content: center;
   position: absolute;
   background-color: #21243898;
-  backdrop-filter: blur(3px);
-  transition: 1s ease-in-out;
+  backdrop-filter: blur(5px);
+  transition: 0.5s;
 }
 
 .about-me-content:hover {
-  display: none;
+  opacity: 0;
 }
 
 /* background parallax */
@@ -32,7 +29,7 @@
   height: 90vh;
   width: 100%;
   background-color: $color-gris-oscuro;
-  @include background-image;
+  @include background-image (url(../../assets/images/mind-and-earth.jpg), fixed, cover, center); 
   overflow: hidden;
 }
 

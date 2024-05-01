@@ -101,6 +101,7 @@ p {
   height: 1.2rem;
   background-color: rgba(255, 255, 255, 0.397);
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -139,6 +140,7 @@ a {
 /* BOTONES */
 .button {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -266,6 +268,7 @@ section#card-6 {
   width: 100%;
   height: 900px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -274,7 +277,6 @@ section#card-6 {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  object-fit: contain;
   overflow: hidden;
   border: #92939c 1px solid;
 }
@@ -283,6 +285,7 @@ section#card-6 {
   width: 100%;
   height: 300px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -310,14 +313,15 @@ section#card-6 {
 /* ABOUT */
 div.habilidades-flex {
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  padding: 50px 20px;
+  gap: 20px;
 }
 
 .habilidades-flex {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Ajusta aquí el número de columnas */ /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta automáticamente el número de columnas */
+  grid-template-areas: "detalle creatividad calidad";
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
@@ -325,16 +329,28 @@ div.habilidades-flex {
   gap: 20px;
 }
 
+article#detalle {
+  grid-area: detalle;
+}
+
+article#creatividad {
+  grid-area: creatividad;
+}
+
+article#calidad {
+  grid-area: calidad;
+}
+
 .detalle-content {
   display: inline-block;
+  justify-content: center;
+  align-items: center;
   padding: 50px 20px;
   text-align: center;
-  width: 400px;
+  width: 100%;
 }
 
 .detalle-content img {
-  width: auto;
-  height: auto;
   background-color: rgba(51, 54, 70, 0.631372549);
   padding: 16px;
   border-radius: 30px;
@@ -343,15 +359,14 @@ div.habilidades-flex {
 
 .creatividad-content {
   display: inline-block;
-  padding: 50px 20px;
   justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
   text-align: center;
-  width: 400px;
+  width: 100%;
 }
 
 .creatividad-content img {
-  width: auto;
-  height: auto;
   background-color: rgba(51, 54, 70, 0.631372549);
   padding: 16px;
   border-radius: 30px;
@@ -360,14 +375,14 @@ div.habilidades-flex {
 
 .calidad-content {
   display: inline-block;
+  justify-content: center;
+  align-items: center;
   padding: 50px 20px;
   text-align: center;
-  width: 400px;
+  width: 100%;
 }
 
 .calidad-content img {
-  width: auto;
-  height: auto;
   background-color: rgba(51, 54, 70, 0.631372549);
   padding: 16px;
   border-radius: 30px;
@@ -382,6 +397,7 @@ div.habilidades-flex {
 .profile-flex {
   display: grid;
   grid-template-columns: 1fr; /* Dos columnas para la imagen y el contenido del perfil */
+  grid-template-areas: profile-flex;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -394,6 +410,7 @@ div.habilidades-flex {
 .background-parallax {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -401,7 +418,6 @@ div.habilidades-flex {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  object-fit: contain;
   overflow: hidden;
   gap: 0 100px;
   flex-flow: row wrap;
@@ -410,10 +426,10 @@ div.habilidades-flex {
 
 .profile-content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: column;
   width: 600px;
   padding: 0 20px 30px 20px;
 }
@@ -429,6 +445,7 @@ div.habilidades-flex {
 
 .photographer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -512,6 +529,7 @@ div.habilidades-flex {
     width: 100%;
     height: 300px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -600,10 +618,10 @@ div.habilidades-flex {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: column;
   gap: 5rem;
   padding: 10px 0;
 }
@@ -633,6 +651,7 @@ div.habilidades-flex {
 /* CONTACT */
 .section-contact {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -644,10 +663,10 @@ div.habilidades-flex {
 
 .contact {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: column;
   width: 600px;
   padding: 100px 60px 40px 60px;
 }
@@ -664,20 +683,20 @@ div.habilidades-flex {
 
 .form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: column;
   width: 600px;
   padding: 30px;
 }
 
 form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: column;
   background-color: rgba(51, 54, 70, 0.631372549);
   border: 1px solid #92939c;
   border-radius: 10px;
@@ -728,6 +747,7 @@ label {
 #enviar {
   width: 500px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -759,6 +779,7 @@ label {
 .title {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -778,6 +799,7 @@ label {
   width: 100%;
   height: 80vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -796,6 +818,7 @@ label {
 /* GALLERY */
 .gallery {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -806,6 +829,7 @@ label {
 
 .card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -858,19 +882,20 @@ label {
 .about-me-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100%;
   height: auto;
   padding: 0 60px 30px 60px;
-  text-align: center;
-  justify-content: center;
   position: absolute;
   background-color: rgba(33, 36, 56, 0.5960784314);
-  backdrop-filter: blur(3px);
-  transition: 1s ease-in-out;
+  backdrop-filter: blur(5px);
+  transition: 0.5s;
 }
 
 .about-me-content:hover {
-  display: none;
+  opacity: 0;
 }
 
 /* background parallax */
