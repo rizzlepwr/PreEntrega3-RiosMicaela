@@ -41,6 +41,13 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media screen and (max-width: 600px) {
+    & {
+      width: 300px;
+      justify-content: center;
+    }
+  }
 }
 
 .form-mensaje {

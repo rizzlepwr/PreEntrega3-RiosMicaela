@@ -1,8 +1,5 @@
 /* RESPONSIVE */
 
-/* @media screen  {
-} */
-
 @media screen and (max-width: 1200px) {
   .main-content {
     width: 100vh;
@@ -49,7 +46,7 @@
 
 @media screen and (max-width: 767px) {
   .margin-top {
-    display: none;
+    margin: 60px;
   }
 
   .offcanvas-title {
@@ -101,7 +98,7 @@
   }
 
   /* Gallery portfolio */
-  .form-control {
+  #grilla {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -157,14 +154,6 @@
     width: 400px;
     padding: 30px;
     overflow: hidden;
-  }
-
-  .form-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 300px;
-    justify-content: center;
   }
 
   #name,
