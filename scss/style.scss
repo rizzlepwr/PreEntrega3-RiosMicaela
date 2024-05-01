@@ -7,10 +7,10 @@
 @import "components/footer";
 @import "components/buttons";
 //layouts
+@import "layouts/grids";
 @import "layouts/index";
 @import "layouts/responsive";
-//pages
-@import "pages/videos";
-@import "pages/contact";
-@import "pages/portfolio";
-@import "pages/aboutme";
+@import "layouts/videos";
+@import "layouts/contact";
+@import "layouts/portfolio";
+@import "layouts/aboutme";

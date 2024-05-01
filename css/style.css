@@ -255,6 +255,34 @@ section#card-6 {
   grid-area: card-6;
 }
 
+/* gallery videos */
+#grilla-videos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "video-1 video-2" "video-3 video-4";
+  overflow: hidden;
+  padding: 60px 60px;
+  gap: 5rem;
+}
+
+div#video-1 {
+  grid-area: video-1;
+}
+
+div#video-2 {
+  grid-area: video-2;
+}
+
+div#video-3 {
+  grid-area: video-3;
+}
+
+div#video-4 {
+  grid-area: video-4;
+}
+
 /* grids para el contenedor principal */
 #grids-container {
   width: 100%;
@@ -273,7 +301,7 @@ section#card-6 {
   align-items: center;
   text-align: center;
   /* background-parallax-home */
-  background-image: url(../../assets/images/background-hero.jpg);
+  background-image: url(/assets/images/background-hero.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -414,7 +442,7 @@ article#calidad {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(../../assets/images/background-hero.jpg);
+  background-image: url(/assets/images/background-hero.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -479,17 +507,17 @@ article#calidad {
     display: flex;
     flex-flow: row wrap;
   }
+  /* Gallery videos */
   #grilla-videos {
+    width: 100%;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    display: flex;
+    grid-template-areas: "video-1" "video-2" "video-3" "video-4";
     flex-flow: row wrap;
+    flex-direction: column;
   }
-  .gallery-video {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-  .card-video {
+  .card-video-content {
     width: 800px;
     height: 400px;
   }
@@ -500,6 +528,9 @@ article#calidad {
   }
 }
 @media screen and (max-width: 767px) {
+  .margin-top {
+    display: none;
+  }
   .offcanvas-title {
     width: 20%;
   }
@@ -521,6 +552,7 @@ article#calidad {
   }
 }
 @media screen and (max-width: 600px) {
+  /* index */
   .section-hero {
     width: 100%;
     height: 700px;
@@ -544,7 +576,8 @@ article#calidad {
     align-items: center;
     justify-content: center;
   }
-  #grilla {
+  /* Gallery portfolio */
+  .form-control {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -553,18 +586,7 @@ article#calidad {
     flex-flow: row wrap;
     flex-direction: column;
   }
-  #grilla-videos {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    padding: 20px 20px;
-    gap: 20px 0;
-  }
-  .gallery-video {
-    border-radius: 0px;
-  }
+  /* videos */
   .title-video {
     text-align: left;
     font-size: rem;
@@ -572,14 +594,79 @@ article#calidad {
     padding: 0 60px;
     top: 300px;
   }
+  /* cards */
   .album-title {
     font-size: 1.5rem;
     position: absolute;
     padding: 20px 0 80px 0;
   }
-  .card-video {
+  .card-video-content {
     width: 800px;
     height: 400px;
+  }
+  /* form */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 600px;
+    padding: 10px 60px 40px 60px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    padding: 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    padding: 30px;
+    overflow: hidden;
+  }
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    justify-content: center;
+  }
+  #name,
+  #email,
+  #tel {
+    width: 300px;
+    padding: 30px;
+    height: 40px;
+    background-color: #dbdbdb;
+    border: 1px solid #92939c;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: black;
+  }
+  #mensaje {
+    width: 300px;
+    height: 40px;
+    background-color: #dbdbdb;
+    border: 1px solid #92939c;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: black;
+  }
+  #enviar {
+    width: 300px;
   }
 }
 /* main videos */
@@ -588,33 +675,7 @@ article#calidad {
 }
 
 /* Gallery */
-#grilla-videos {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "card-1 card-2" "card-3 card-4";
-  overflow: hidden;
-  padding: 60px 60px;
-}
-
-#card-1 {
-  grid-area: card-1;
-}
-
-#card-2 {
-  grid-area: card-2;
-}
-
-#card-3 {
-  grid-area: card-3;
-}
-
-#card-4 {
-  grid-area: card-4;
-}
-
-.gallery-video {
+.card-video {
   width: 100%;
   height: 100%;
   display: flex;
@@ -634,7 +695,7 @@ article#calidad {
   top: 300px;
 }
 
-.card-video {
+.card-video-content {
   position: relative;
   width: 100%;
   height: 500px;
@@ -656,7 +717,7 @@ article#calidad {
   align-items: center;
   text-align: center;
   flex-flow: row wrap;
-  padding: 0px 0 30px 0;
+  padding: 0 0 30px 0;
   gap: 0 60px;
   height: auto;
 }
@@ -725,27 +786,36 @@ label {
   text-align: left;
 }
 
-#name,
-#email,
-#tel,
-#mensaje {
+.form-control {
   width: 500px;
   padding: 20px;
+}
+
+#name,
+#email,
+#tel {
+  height: 40px;
   background-color: #dbdbdb;
   border: 1px solid #92939c;
   border-radius: 8px;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: #000000;
+  color: black;
 }
 
 #mensaje {
   height: 80px;
+  background-color: #dbdbdb;
+  border: 1px solid #92939c;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: black;
 }
 
 #enviar {
-  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -870,13 +940,18 @@ label {
 }
 
 /* main Acerca de mi */
+.about-me {
+  height: auto;
+}
+
 .about-me-flex {
   display: flex;
   align-items: center;
   flex-flow: row wrap;
   gap: 0 60px;
   position: relative;
-  top: 300px;
+  top: 50vh;
+  height: auto;
 }
 
 .about-me-content {
@@ -903,7 +978,7 @@ label {
   height: 90vh;
   width: 100%;
   background-color: #333646;
-  background-image: url(../../assets/images/mind-and-earth.jpg);
+  background-image: url(/assets/images/mind-and-earth.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

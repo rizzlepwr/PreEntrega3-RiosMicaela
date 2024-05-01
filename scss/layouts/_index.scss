@@ -1,38 +1,3 @@
-#grilla {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "card-1 card-2"
-    "card-3 card-4"
-    "card-5 card-6";
-}
-
-section#card-1 {
-  grid-area: card-1;
-}
-
-section#card-2 {
-  grid-area: card-2;
-}
-
-section#card-3 {
-  grid-area: card-3;
-}
-
-section#card-4 {
-  grid-area: card-4;
-}
-
-section#card-5 {
-  grid-area: card-5;
-}
-
-section#card-6 {
-  grid-area: card-6;
-}
-
 /* grids para el contenedor principal */
 #grids-container {
   width: 100%;
@@ -47,7 +12,7 @@ section#card-6 {
   height: 900px;
   @include flex (column, center, center, center);
   /* background-parallax-home */
-  background-image: url(../../assets/images/background-hero.jpg);
+  background-image: url(/assets/images/background-hero.jpg);
   @include background-image (fixed, cover, center); 
   overflow: hidden;
   border: $color-border 1px solid;
@@ -181,7 +146,7 @@ article#calidad {
 .background-parallax {
   width: 100%;
   @include flex (column, center, center, center);
-  background-image: url(../../assets/images/background-hero.jpg);
+  background-image: url(/assets/images/background-hero.jpg);
   @include background-image (fixed, cover, center); 
   overflow: hidden;
   gap: 0 100px;

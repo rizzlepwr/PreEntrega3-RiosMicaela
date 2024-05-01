@@ -2,7 +2,7 @@
 .section-contact {
   @include flex (column, center, center, center);
   flex-flow: row wrap;
-  padding: 0px 0 30px 0;
+  padding: 0 0 30px 0;
   gap: 0 60px;
   height: auto;
 }
@@ -58,27 +58,36 @@ label {
   text-align: left;
 }
 
-#name,
-#email,
-#tel,
-#mensaje {
+.form-control {
   width: 500px;
   padding: 20px;
+}
+
+#name,
+#email,
+#tel {
+  height: 40px;
   background-color: #dbdbdb;
   border: 1px solid $color-border;
   border-radius: 8px;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: #000000;
+  color: $color-black;
 }
 
 #mensaje {
   height: 80px;
+  background-color: #dbdbdb;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: $color-black;
 }
 
 #enviar {
-  width: 500px;
   @include flex (column, center, center, center);
   gap: 8px;
   font-family: inherit;
