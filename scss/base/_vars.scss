@@ -13,8 +13,7 @@ $color-border: #92939c;
     text-align: $text;
 }
 
-@mixin background-image($bg-image, $bg-attachment, $bg-size, $bg-position) {
-    background-image: $bg-image;
+@mixin background-image ($bg-attachment, $bg-size, $bg-position) {
     background-attachment: $bg-attachment;
     background-size: $bg-size;
     background-position: $bg-position;
