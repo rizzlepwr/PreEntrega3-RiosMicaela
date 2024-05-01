@@ -1,0 +1,64 @@
+/* main videos */
+.section-separator {
+  border: 1px solid $color-border;
+}
+
+/* Gallery */
+#grilla-videos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "card-1 card-2"
+    "card-3 card-4";
+  overflow: hidden;
+  padding: 60px 60px;
+}
+
+#card-1 {
+  grid-area: card-1;
+}
+
+#card-2 {
+  grid-area: card-2;
+}
+
+#card-3 {
+  grid-area: card-3;
+}
+
+#card-4 {
+  grid-area: card-4;
+}
+
+.gallery-video {
+  width: 100%;
+  height: 100%;
+  @include flex-center;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 10px 0;
+}
+
+.title-video {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0 60px;
+  top: 300px;
+}
+
+.card-video {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid $color-border;
+}

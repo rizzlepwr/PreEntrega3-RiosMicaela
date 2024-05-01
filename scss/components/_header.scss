@@ -1,0 +1,39 @@
+/* grids para el header */
+#header {
+  grid-row: 1;
+  position: relative;
+}
+
+/* estilos para el nav */
+.img-icon {
+  width: 30px;
+  height: auto;
+}
+
+.navbar.navbar-dark {
+  background-color: #333647d5;
+  height: 60px;
+  width: 100%;
+}
+
+
+.navbar-nav {
+  width: 100%;
+  gap: 10px;
+}
+
+.nav-link {
+  width: 110px;
+  box-shadow: 2px 1px 8px rgba(126, 151, 184, 0.658);
+  background-color: #333647d5;
+  border-radius: 8px;
+  text-align: center;
+  padding: 3px 10px;
+}
+
+.menu-separator {
+  width: 1px;
+  height: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.397);
+  @include flex-center;
+}

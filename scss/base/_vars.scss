@@ -1,0 +1,27 @@
+$color-gris-oscuro: #333646;
+$color-gris-oscuro-opacity: #333646a1;
+$color-gris-claro: #575966;
+$color-white: white;
+$color-border: #92939c;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin background-image {
+    background-image: url(../../assets/images/mind-and-earth.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin background-image-2 {
+    background-image: url(../../assets/images/background-hero.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+}

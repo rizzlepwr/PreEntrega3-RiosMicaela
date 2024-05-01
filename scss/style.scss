@@ -1,0 +1,16 @@
+//base
+@import "base/vars";
+@import "base/reset";
+@import "base/fuentes";
+//components
+@import "components/header";
+@import "components/footer";
+@import "components/buttons";
+//layouts
+@import "layouts/index";
+@import "layouts/responsive";
+//pages
+@import "pages/videos";
+@import "pages/contact";
+@import "pages/portfolio";
+@import "pages/aboutme";

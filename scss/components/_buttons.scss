@@ -1,0 +1,83 @@
+/* BOTONES */
+
+.button {
+    @include flex-center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+  
+  .style-button-primary {
+    position: absolute;
+    bottom: 20px; /* Ajustado para dejar espacio al botón */
+    display: flex;
+    gap: 8px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #ebf0f8;
+    background-color: #7e97b8;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 20px;
+    padding: 10px 24px;
+    transition: 0.2s;
+    box-shadow: -0px -2px 16px 0px #ffffff5d, 4px 2px 16px 0px #5f9de77a;
+    cursor: pointer;
+  }
+  
+  .style-button-primary:hover {
+    color: $color-white;
+    background-color: #507eb9;
+    box-shadow: -2px -1px 8px 0px #ffffff5d, 2px 1px 8px 0px #5f9de77a;
+  }
+  
+  .style-button-navbar {
+    top: 10px;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    color: #ebf0f8;
+    background-color: #7e97b8;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 15px;
+    padding: 10px 10px;
+    transition: 0.2s;
+    box-shadow: -0px -2px 16px 0px #ffffff5d, 4px 2px 16px 0px #5f9de77a;
+    cursor: pointer;
+  }
+  
+  .style-button-navbar:hover {
+    color: $color-white;
+    background-color: #87abdb;
+    box-shadow: -2px -1px 8px 0px #ffffff5d, 2px 1px 8px 0px #5f9de77a;
+  }
+  
+  .btn-close {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    font-family: inherit;
+    color: #ebf0f8;
+    background-color: #7e97b8;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 15px;
+    padding: 10px 24px;
+    transition: 0.2s;
+    box-shadow: -0px -2px 16px 0px #ffffff5d, 4px 2px 16px 0px #5f9de77a;
+    cursor: pointer;
+  }
+  
+  .btn-close:hover {
+    color: $color-white;
+    background-color: #87abdb;
+    box-shadow: -2px -1px 8px 0px #ffffff5d, 2px 1px 8px 0px #5f9de77a;
+  }
+  
