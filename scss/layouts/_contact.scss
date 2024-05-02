@@ -5,11 +5,19 @@
   padding: 0 0 30px 0;
   gap: 0 60px;
   height: auto;
+  background-image: url("../assets/images/bg-hero.jpg");
+  @include background-image(fixed, cover, center);
 }
 .contact {
   @include flex (column, center, center, center);
   width: 600px;
   padding: 100px 60px 40px 60px;
+
+  @include media-up(phone) {
+    @include flex(column, center, center, center);
+    width: 600px;
+    padding: 10px 60px 40px 60px;
+  }
 }
 
 .icons {
@@ -26,6 +34,11 @@
   @include flex (column, center, center, center);
   width: 600px;
   padding: 30px;
+  
+  @include media-up(phone) {
+    @include flex(column, center, center, center);
+    width: 360px;
+  }
 }
 
 form {
@@ -35,6 +48,12 @@ form {
   border-radius: 10px;
   padding: 30px;
   gap: 16px;
+
+  @include media-up(phone) {
+    @include flex(column, center, center, center);
+    width: 360px;
+    overflow: hidden;
+  }
 }
 
 .form-content {
@@ -42,13 +61,11 @@ form {
   flex-direction: column;
   gap: 10px;
 
-  @media screen and (max-width: 600px) {
-    & {
+  @include media-up(phone) {
       width: 300px;
       justify-content: center;
     }
   }
-}
 
 .form-mensaje {
   display: flex;
@@ -81,6 +98,19 @@ label {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: $color-black;
+
+  @include media-up(phone) {
+    width: 300px;
+    padding: 30px;
+    height: 40px;
+    background-color: #dbdbdb;
+    border: 1px solid $color-border;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: $color-black;
+  }
 }
 
 #mensaje {
@@ -92,6 +122,10 @@ label {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: $color-black;
+
+  @include media-up(phone) {
+    width: 300px;
+  }
 }
 
 #enviar {
@@ -112,6 +146,10 @@ label {
   transition: 0.2s;
   box-shadow: -1px -1px 6px 0px $color-white, 1px 1px 6px 0px #5f9de77a;
   cursor: pointer;
+
+  @include media-up(phone) {
+    width: 300px;
+  }
 }
 
 #enviar:hover {

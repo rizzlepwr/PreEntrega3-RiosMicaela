@@ -4,6 +4,51 @@
 }
 
 /* Gallery */
+#grilla-videos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "video-1 video-2"
+    "video-3 video-4";
+  overflow: hidden;
+  padding: 60px 60px;
+  gap: 5rem;
+
+  @include media-up(desktop) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "video-1"
+      "video-2"
+      "video-3"
+      "video-4";
+    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+div#video-1 {
+  grid-area: video-1;
+}
+
+div#video-2 {
+  grid-area: video-2;
+}
+
+div#video-3 {
+  grid-area: video-3;
+}
+
+div#video-4 {
+  grid-area: video-4;
+}
+
 .card-video {
   width: 100%;
   height: 100%;
@@ -12,12 +57,47 @@
   padding: 10px 0;
 }
 
+.album-title-video {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(27, 29, 39, 0.548);
+  color: $color-white;
+  padding: 20px 0 100px 0;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  backdrop-filter: blur(2px);
+
+  @include media-up(desktop) {
+    font-size: 1.8rem;
+    position: absolute;
+    padding: 20px 0 80px 0;
+  }
+
+  @include media-up(phone) {
+    font-size: 1.2rem;
+    position: absolute;
+    padding: 20px 0 80px 0;
+  }
+
+}
+
 .title-video {
-  text-align: left;
+  text-align: center;
   font-size: 2rem;
   font-weight: 400;
   padding: 0 60px;
   top: 300px;
+
+  @include media-up(phone) {
+    text-align: center;
+    font-weight: 400;
+    padding: 0 60px;
+    top: 300px;
+  }
 }
 
 .card-video-content {
@@ -32,4 +112,14 @@
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid $color-border;
+
+  @include media-up(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include media-up(phone) {
+    height: 400px;
+  }
 }

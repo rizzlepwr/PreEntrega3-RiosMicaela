@@ -37,3 +37,36 @@
   background-color: rgba(255, 255, 255, 0.397);
   @include flex (row, center, center, center);
 }
+
+  .offcanvas-title {
+    @include media-up(tablet) {
+      width: 20%;
+    }
+  }
+
+  
+  .offcanvas-header {
+    @include media-up(tablet) {
+    background-color: #333647;
+    height: 60px;
+    }
+  }
+  
+  .offcanvas-body {
+    @include media-up(tablet) {
+    background-color: #575966;
+    }
+  }
+  
+  .nav-link {
+    @include media-up(tablet) {
+    width: 100%;
+    box-shadow: 2px 1px 8px rgba(126, 151, 184, 0.658);
+    background-color: #333647d5;
+    border-radius: 8px;
+    text-align: start;
+    padding: 20px 20px;
+    font-size: 1.4rem;
+  }
+  
+}
