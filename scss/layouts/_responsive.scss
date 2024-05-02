@@ -145,14 +145,12 @@
 
   .form {
     @include flex(column, center, center, center);
-    width: 400px;
-    padding: 30px;
+    width: 360px;
   }
 
   form {
     @include flex(column, center, center, center);
-    width: 400px;
-    padding: 30px;
+    width: 360px;
     overflow: hidden;
   }
 
