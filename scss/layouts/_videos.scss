@@ -58,6 +58,7 @@ div#video-4 {
 }
 
 .album-title-video {
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   position: absolute;
   bottom: 0;
@@ -91,6 +92,8 @@ div#video-4 {
   font-weight: 400;
   padding: 0 60px;
   top: 300px;
+  font-family: "Montserrat", sans-serif;
+
 
   @include media-up(phone) {
     text-align: center;

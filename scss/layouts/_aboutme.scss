@@ -34,7 +34,7 @@
 .hero-background-parallax {
   height: 90vh;
   width: 100%;
-  background-color: $color-gris-oscuro;
+  background-color: $color-primary;
   background-image: url("../assets/images/bg-mind-and-earth.jpg");
   @include background-image (fixed, cover, center); 
   overflow: hidden;

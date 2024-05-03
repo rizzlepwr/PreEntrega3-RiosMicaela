@@ -43,7 +43,7 @@
 
 form {
   @include flex (column, center, center, center);
-  background-color: $color-gris-oscuro-opacity;
+  background-color: $color-primary-opacity;
   border: 1px solid $color-border;
   border-radius: 10px;
   padding: 30px;

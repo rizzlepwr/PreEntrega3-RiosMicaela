@@ -21,18 +21,18 @@
     background-color: #7e97b8;
     border-style: solid;
     border-width: 2px;
-    border-color: rgba(255, 255, 255, 0.333);
+    border-color: #ffffff55;
     border-radius: 20px;
     padding: 10px 24px;
     transition: 0.2s;
-    box-shadow: -0px -2px 16px 0px #ffffff5d, 4px 2px 16px 0px #5f9de77a;
+    box-shadow: -0px -2px 16px 0px $color-shadow-gray, 4px 2px 16px 0px $color-shadow-blue;
     cursor: pointer;
   }
   
   .style-button-primary:hover {
     color: $color-white;
     background-color: #507eb9;
-    box-shadow: -2px -1px 8px 0px #ffffff5d, 2px 1px 8px 0px #5f9de77a;
+    box-shadow: -2px -1px 8px 0px $color-shadow-gray, 2px 1px 8px 0px $color-shadow-blue;
   }
   
   .style-button-navbar {
@@ -41,21 +41,21 @@
     bottom: 10px;
     display: flex;
     color: #ebf0f8;
-    background-color: #7e97b8;
+    background-color: $color-primary-opacity;
     border-style: solid;
-    border-width: 2px;
-    border-color: rgba(255, 255, 255, 0.333);
+    border-width: 1px;
+    border-color: $color-border;
     border-radius: 15px;
     padding: 10px 10px;
     transition: 0.2s;
-    box-shadow: -0px -2px 16px 0px #ffffff5d, 4px 2px 16px 0px #5f9de77a;
+    box-shadow: -0px -2px 16px 0px $color-shadow-gray, 4px 2px 16px 0px $color-shadow-blue;
     cursor: pointer;
   }
   
   .style-button-navbar:hover {
     color: $color-white;
     background-color: #87abdb;
-    box-shadow: -2px -1px 8px 0px #ffffff5d, 2px 1px 8px 0px #5f9de77a;
+    box-shadow: -2px -1px 8px 0px $color-shadow-gray, 2px 1px 8px 0px $color-shadow-blue;
   }
   
   .btn-close {
@@ -71,13 +71,13 @@
     border-radius: 15px;
     padding: 10px 24px;
     transition: 0.2s;
-    box-shadow: -0px -2px 16px 0px #ffffff5d, 4px 2px 16px 0px #5f9de77a;
+    box-shadow: -0px -2px 16px 0px $color-shadow-gray, 4px 2px 16px 0px $color-shadow-blue;
     cursor: pointer;
   }
   
   .btn-close:hover {
     color: $color-white;
     background-color: #87abdb;
-    box-shadow: -2px -1px 8px 0px #ffffff5d, 2px 1px 8px 0px #5f9de77a;
+    box-shadow: -2px -1px 8px 0px $color-shadow-gray, 2px 1px 8px 0px $color-shadow-blue;
   }
   

@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #575966;
+  background-color: #181a22;
   color: white;
   font-size: 16px;
 }
@@ -77,20 +77,27 @@ p {
 }
 
 .navbar.navbar-dark {
-  background-color: rgba(51, 54, 71, 0.8352941176);
+  background-color: rgba(51, 54, 70, 0.631372549);
+  backdrop-filter: blur(8px);
   height: 60px;
   width: 100%;
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .navbar-nav {
   width: 100%;
-  gap: 10px;
+  gap: 8px;
 }
 
 .nav-link {
   width: 110px;
-  box-shadow: 2px 1px 8px rgba(126, 151, 184, 0.658);
+  box-shadow: 2px 1px 8px rgba(126, 151, 184, 0.6588235294);
   background-color: rgba(51, 54, 71, 0.8352941176);
+  border: 0.5px solid rgba(175, 173, 173, 0.4862745098);
   border-radius: 8px;
   text-align: center;
   padding: 3px 10px;
@@ -99,12 +106,18 @@ p {
 .menu-separator {
   width: 1px;
   height: 1.2rem;
-  background-color: rgba(255, 255, 255, 0.397);
+  background-color: rgba(255, 255, 255, 0.3960784314);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* estilos para el offcanvas */
+.offcanvas {
+  height: 100vh;
+  background-color: rgba(51, 54, 70, 0.631372549);
 }
 
 @media (max-width: 767px) {
@@ -122,14 +135,14 @@ p {
 
 @media (max-width: 767px) {
   .offcanvas-body {
-    background-color: #575966;
+    background-color: #181a22;
   }
 }
 
 @media (max-width: 767px) {
   .nav-link {
     width: 100%;
-    box-shadow: 2px 1px 8px rgba(126, 151, 184, 0.658);
+    box-shadow: 2px 1px 8px rgba(51, 54, 70, 0.631372549);
     background-color: rgba(51, 54, 71, 0.8352941176);
     border-radius: 8px;
     text-align: start;
@@ -194,7 +207,7 @@ a {
   background-color: #7e97b8;
   border-style: solid;
   border-width: 2px;
-  border-color: rgba(255, 255, 255, 0.333);
+  border-color: rgba(255, 255, 255, 0.3333333333);
   border-radius: 20px;
   padding: 10px 24px;
   transition: 0.2s;
@@ -214,10 +227,10 @@ a {
   bottom: 10px;
   display: flex;
   color: #ebf0f8;
-  background-color: #7e97b8;
+  background-color: rgba(51, 54, 70, 0.631372549);
   border-style: solid;
-  border-width: 2px;
-  border-color: rgba(255, 255, 255, 0.333);
+  border-width: 1px;
+  border-color: #afadad;
   border-radius: 15px;
   padding: 10px 10px;
   transition: 0.2s;
@@ -283,7 +296,7 @@ a {
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  border: #92939c 1px solid;
+  border: #afadad 1px solid;
 }
 @media (max-width: 1200px) {
   .section-hero {
@@ -474,7 +487,7 @@ article#calidad {
   overflow: hidden;
   gap: 0 100px;
   flex-flow: row wrap;
-  border: #92939c 1px solid;
+  border: #afadad 1px solid;
 }
 
 .profile-content {
@@ -493,7 +506,7 @@ article#calidad {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
-  border: #92939c 2px solid;
+  border: #afadad 2px solid;
 }
 
 .photographer {
@@ -515,7 +528,7 @@ article#calidad {
 
 /* main videos */
 .section-separator {
-  border: 1px solid #92939c;
+  border: 1px solid #afadad;
 }
 
 /* Gallery */
@@ -572,6 +585,7 @@ div#video-4 {
 }
 
 .album-title-video {
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   position: absolute;
   bottom: 0;
@@ -606,6 +620,7 @@ div#video-4 {
   font-weight: 400;
   padding: 0 60px;
   top: 300px;
+  font-family: "Montserrat", sans-serif;
 }
 @media (max-width: 600px) {
   .title-video {
@@ -627,7 +642,7 @@ div#video-4 {
   justify-content: flex-end;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #92939c;
+  border: 1px solid #afadad;
 }
 @media (max-width: 1200px) {
   .card-video-content {
@@ -717,7 +732,7 @@ form {
   align-items: center;
   text-align: center;
   background-color: rgba(51, 54, 70, 0.631372549);
-  border: 1px solid #92939c;
+  border: 1px solid #afadad;
   border-radius: 10px;
   padding: 30px;
   gap: 16px;
@@ -771,7 +786,7 @@ label {
 #tel {
   height: 40px;
   background-color: #dbdbdb;
-  border: 1px solid #92939c;
+  border: 1px solid #afadad;
   border-radius: 8px;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -786,7 +801,7 @@ label {
     padding: 30px;
     height: 40px;
     background-color: #dbdbdb;
-    border: 1px solid #92939c;
+    border: 1px solid #afadad;
     border-radius: 8px;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
@@ -798,7 +813,7 @@ label {
 #mensaje {
   height: 80px;
   background-color: #dbdbdb;
-  border: 1px solid #92939c;
+  border: 1px solid #afadad;
   border-radius: 8px;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -958,7 +973,7 @@ section#card-6 {
   text-align: center;
   width: 100%;
   height: 80vh;
-  border: 1px solid #92939c;
+  border: 1px solid #afadad;
   overflow: hidden;
 }
 

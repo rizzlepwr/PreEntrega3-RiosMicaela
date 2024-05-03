@@ -129,7 +129,7 @@ article#calidad {
 }
 
 .detalle-content img {
-  background-color: $color-gris-oscuro-opacity;
+  background-color: $color-primary-opacity;
   padding: 16px;
   border-radius: 30px;
   justify-self: center;
@@ -145,7 +145,7 @@ article#calidad {
 }
 
 .creatividad-content img {
-  background-color: $color-gris-oscuro-opacity;
+  background-color: $color-primary-opacity;
   padding: 16px;
   border-radius: 30px;
   justify-self: center;
@@ -161,7 +161,7 @@ article#calidad {
 }
 
 .calidad-content img {
-  background-color: $color-gris-oscuro-opacity;
+  background-color: $color-primary-opacity;
   padding: 16px;
   border-radius: 30px;
   justify-self: center;
@@ -181,7 +181,7 @@ article#calidad {
   width: 100%;
   flex-flow: row wrap;
   gap: 0 60px;
-  background-color: $color-gris-oscuro-opacity;
+  background-color: $color-primary-opacity;
 }
 
 /* background-parallax-home */

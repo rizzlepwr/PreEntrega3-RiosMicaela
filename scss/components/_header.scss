@@ -11,21 +11,23 @@
 }
 
 .navbar.navbar-dark {
-  background-color: #333647d5;
+  background-color: $color-primary-opacity;
+  backdrop-filter: blur(8px);
   height: 60px;
   width: 100%;
+  @include flex(none, center, center, center);
 }
-
 
 .navbar-nav {
   width: 100%;
-  gap: 10px;
+  gap: 8px;
 }
 
 .nav-link {
   width: 110px;
-  box-shadow: 2px 1px 8px rgba(126, 151, 184, 0.658);
+  box-shadow: 2px 1px 8px #7e97b8a8;
   background-color: #333647d5;
+  border: 0.5px solid #afadad7c;
   border-radius: 8px;
   text-align: center;
   padding: 3px 10px;
@@ -34,39 +36,42 @@
 .menu-separator {
   width: 1px;
   height: 1.2rem;
-  background-color: rgba(255, 255, 255, 0.397);
-  @include flex (row, center, center, center);
+  background-color: #ffffff65;
+  @include flex(row, center, center, center);
 }
 
-  .offcanvas-title {
-    @include media-up(tablet) {
-      width: 20%;
-    }
+/* estilos para el offcanvas */
+.offcanvas {
+  height: 100vh;
+  background-color: $color-primary-opacity;
+}
+.offcanvas-title {
+  @include media-up(tablet) {
+    width: 20%;
   }
+}
 
-  
-  .offcanvas-header {
-    @include media-up(tablet) {
+.offcanvas-header {
+  @include media-up(tablet) {
     background-color: #333647;
     height: 60px;
-    }
   }
-  
-  .offcanvas-body {
-    @include media-up(tablet) {
-    background-color: #575966;
-    }
+}
+
+.offcanvas-body {
+  @include media-up(tablet) {
+    background-color: $color-secondary;
   }
-  
-  .nav-link {
-    @include media-up(tablet) {
+}
+
+.nav-link {
+  @include media-up(tablet) {
     width: 100%;
-    box-shadow: 2px 1px 8px rgba(126, 151, 184, 0.658);
+    box-shadow: 2px 1px 8px $color-primary-opacity;
     background-color: #333647d5;
     border-radius: 8px;
     text-align: start;
     padding: 20px 20px;
     font-size: 1.4rem;
   }
-  
 }
