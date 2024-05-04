@@ -21,7 +21,7 @@
   background-image: url("../assets/images/bg-hero.jpg");
   @include background-image(fixed, cover, center);
   overflow: hidden;
-  border: $color-border 1px solid;
+  border-bottom: $color-border 1px solid;
 
   @include media-up(desktop) {
     width: 100%;
@@ -129,10 +129,17 @@ article#calidad {
 }
 
 .detalle-content img {
+  width: 80px;
   background-color: $color-primary-opacity;
   padding: 16px;
   border-radius: 30px;
   justify-self: center;
+  transition: 1s;
+  
+  &:hover {
+    width: 100px;
+    font-size: 24px;
+ } 
 }
 
 .creatividad-content {
@@ -145,10 +152,17 @@ article#calidad {
 }
 
 .creatividad-content img {
+  width: 80px;
   background-color: $color-primary-opacity;
   padding: 16px;
   border-radius: 30px;
   justify-self: center;
+  transition: 0.5s;
+  
+  &:hover {
+    width: 100px;
+    font-size: 24px;
+ }
 }
 
 .calidad-content {
@@ -161,10 +175,17 @@ article#calidad {
 }
 
 .calidad-content img {
+  width: 80px;
   background-color: $color-primary-opacity;
   padding: 16px;
   border-radius: 30px;
   justify-self: center;
+  transition: 1s;
+  
+  &:hover {
+    width: 100px;
+    font-size: 24px;
+ }
 }
 
 .separator {

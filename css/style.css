@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #181a22;
+  background-color: #161b25;
   color: white;
   font-size: 16px;
 }
@@ -77,7 +77,7 @@ p {
 }
 
 .navbar.navbar-dark {
-  background-color: rgba(51, 54, 70, 0.631372549);
+  background-color: rgba(44, 57, 82, 0.4745098039);
   backdrop-filter: blur(8px);
   height: 60px;
   width: 100%;
@@ -96,7 +96,7 @@ p {
 .nav-link {
   width: 110px;
   box-shadow: 2px 1px 8px rgba(126, 151, 184, 0.6588235294);
-  background-color: rgba(51, 54, 71, 0.8352941176);
+  background-color: rgba(44, 57, 82, 0.4745098039);
   border: 0.5px solid rgba(175, 173, 173, 0.4862745098);
   border-radius: 8px;
   text-align: center;
@@ -117,7 +117,7 @@ p {
 /* estilos para el offcanvas */
 .offcanvas {
   height: 100vh;
-  background-color: rgba(51, 54, 70, 0.631372549);
+  background-color: rgba(44, 57, 82, 0.4745098039);
 }
 
 @media (max-width: 767px) {
@@ -128,22 +128,22 @@ p {
 
 @media (max-width: 767px) {
   .offcanvas-header {
-    background-color: #333647;
+    background-color: rgba(44, 57, 82, 0.4745098039);
     height: 60px;
   }
 }
 
 @media (max-width: 767px) {
   .offcanvas-body {
-    background-color: #181a22;
+    background-color: #161b25;
   }
 }
 
 @media (max-width: 767px) {
   .nav-link {
     width: 100%;
-    box-shadow: 2px 1px 8px rgba(51, 54, 70, 0.631372549);
-    background-color: rgba(51, 54, 71, 0.8352941176);
+    box-shadow: 2px 1px 8px rgba(44, 57, 82, 0.4745098039);
+    background-color: rgba(44, 57, 82, 0.4745098039);
     border-radius: 8px;
     text-align: start;
     padding: 20px 20px;
@@ -160,7 +160,7 @@ p {
 
 /* FOOTER */
 footer {
-  background-color: #333646;
+  background: linear-gradient(to top, #2c3952, #161b25);
   padding: 16px;
   text-align: center;
   line-height: 1.8rem;
@@ -227,7 +227,7 @@ a {
   bottom: 10px;
   display: flex;
   color: #ebf0f8;
-  background-color: rgba(51, 54, 70, 0.631372549);
+  background-color: rgba(44, 57, 82, 0.4745098039);
   border-style: solid;
   border-width: 1px;
   border-color: #afadad;
@@ -296,7 +296,7 @@ a {
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  border: #afadad 1px solid;
+  border-bottom: #afadad 1px solid;
 }
 @media (max-width: 1200px) {
   .section-hero {
@@ -417,10 +417,16 @@ article#calidad {
 }
 
 .detalle-content img {
-  background-color: rgba(51, 54, 70, 0.631372549);
+  width: 80px;
+  background-color: rgba(44, 57, 82, 0.4745098039);
   padding: 16px;
   border-radius: 30px;
   justify-self: center;
+  transition: 1s;
+}
+.detalle-content img:hover {
+  width: 100px;
+  font-size: 24px;
 }
 
 .creatividad-content {
@@ -433,10 +439,16 @@ article#calidad {
 }
 
 .creatividad-content img {
-  background-color: rgba(51, 54, 70, 0.631372549);
+  width: 80px;
+  background-color: rgba(44, 57, 82, 0.4745098039);
   padding: 16px;
   border-radius: 30px;
   justify-self: center;
+  transition: 0.5s;
+}
+.creatividad-content img:hover {
+  width: 100px;
+  font-size: 24px;
 }
 
 .calidad-content {
@@ -449,10 +461,16 @@ article#calidad {
 }
 
 .calidad-content img {
-  background-color: rgba(51, 54, 70, 0.631372549);
+  width: 80px;
+  background-color: rgba(44, 57, 82, 0.4745098039);
   padding: 16px;
   border-radius: 30px;
   justify-self: center;
+  transition: 1s;
+}
+.calidad-content img:hover {
+  width: 100px;
+  font-size: 24px;
 }
 
 .separator {
@@ -469,7 +487,7 @@ article#calidad {
   width: 100%;
   flex-flow: row wrap;
   gap: 0 60px;
-  background-color: rgba(51, 54, 70, 0.631372549);
+  background-color: rgba(44, 57, 82, 0.4745098039);
 }
 
 /* background-parallax-home */
@@ -731,7 +749,7 @@ form {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(51, 54, 70, 0.631372549);
+  background-color: rgba(44, 57, 82, 0.4745098039);
   border: 1px solid #afadad;
   border-radius: 10px;
   padding: 30px;
@@ -1059,7 +1077,7 @@ section#card-6 {
 .hero-background-parallax {
   height: 90vh;
   width: 100%;
-  background-color: #333646;
+  background-color: #2c3952;
   background-image: url("../assets/images/bg-mind-and-earth.jpg");
   background-attachment: fixed;
   background-size: cover;
