@@ -15,7 +15,7 @@
 .section-hero {
   position: relative;
   width: 100%;
-  height: 900px;
+  height: 100vh;
   @include flex(column, center, center, center);
   /* background-parallax-home */
   background-image: url("../assets/images/bg-hero.jpg");
@@ -60,11 +60,11 @@
 }
 
 #main-content {
+  width: 100%;
   display: grid;
   justify-content: center;
   grid-template-rows: auto 1fr; /* Una fila para la sección del héroe y otra para la sección sobre mí */
   margin: 0;
-  width: 100%;
   grid-row: 2;
 
   @include media-up(desktop) {

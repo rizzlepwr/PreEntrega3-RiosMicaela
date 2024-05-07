@@ -41,7 +41,7 @@
     bottom: 10px;
     display: flex;
     color: #ebf0f8;
-    background-color: $color-primary-opacity;
+    background-color: #546b9679;
     border-style: solid;
     border-width: 1px;
     border-color: $color-border;
@@ -55,6 +55,7 @@
   .style-button-navbar:hover {
     color: $color-white;
     background-color: #87abdb;
+    border-color: $color-border;
     box-shadow: -2px -1px 8px 0px $color-shadow-gray, 2px 1px 8px 0px $color-shadow-blue;
   }
   
