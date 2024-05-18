@@ -11,7 +11,8 @@
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "video-1 video-2"
-    "video-3 video-4";
+    "video-3 video-4"
+    "video-5";
   overflow: hidden;
   padding: 60px 60px;
   gap: 5rem;
@@ -25,7 +26,8 @@
       "video-1"
       "video-2"
       "video-3"
-      "video-4";
+      "video-4"
+      "video-5";
     flex-flow: row wrap;
     flex-direction: column;
     justify-content: center;
@@ -47,6 +49,24 @@ div#video-3 {
 
 div#video-4 {
   grid-area: video-4;
+}
+
+div#video-5 {
+  grid-area: video-5;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .card-video {
@@ -90,15 +110,20 @@ div#video-4 {
   text-align: center;
   font-size: 2rem;
   font-weight: 400;
-  padding: 0 60px;
+  padding: 10px 60px;
   top: 300px;
   font-family: "Montserrat", sans-serif;
 
+  @include media-up(tablet) {
+    font-size: 1.8rem;
+  }
 
   @include media-up(phone) {
     text-align: center;
     font-weight: 400;
-    padding: 0 60px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding: 20px 60px;
     top: 300px;
   }
 }
